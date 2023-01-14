@@ -1,23 +1,23 @@
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import { OtherLogo } from './OtherLogo';
+import {OtherLogo} from './OtherLogo';
 
 export const RLogo = () => {
-	const frame = useCurrentFrame();
-	const {width, fps} = useVideoConfig();
+  const frame = useCurrentFrame();
+  const {width, fps} = useVideoConfig();
 
-	const entrance = spring({
-		fps,
-		frame,
-		config: {
-			damping: 200,
-		},
-		durationInFrames: 30,
-	});
+  const entrance = spring({
+    fps,
+    frame,
+    config: {
+      damping: 200,
+    },
+    durationInFrames: 30,
+  });
 
-	const entranceOffset = interpolate(entrance, [0, 1], [width, 0]);
+  const entranceOffset = interpolate(entrance, [0, 1], [width, 0]);
 
-	return (
-		<div className='flex items-end'>
+  return (
+    <div className='flex items-end'>
       <div
         className='text-9xl text-blue-700 drop-shadow-lg shadow-white font-bold'
         style={{transform: `translateX(${entranceOffset}px)`}}
@@ -30,6 +30,6 @@ export const RLogo = () => {
       <OtherLogo char='h' time={35} />
       <OtherLogo char='a' time={40} />
       <OtherLogo char='n' time={45} />
-		</div>
-	);
+    </div>
+  );
 };

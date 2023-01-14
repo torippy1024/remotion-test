@@ -1,10 +1,11 @@
+// .vscode/settings.json
 {
-	"editor.tabSize": 2,
-	"typescript.tsdk": "node_modules/typescript/lib",
-	"editor.codeActionsOnSave": {
-		"source.organizeImports": false,
-		"source.fixAll": true
-	},
-	"typescript.enablePromptUseWorkspaceTsdk": true,
-	"css.lint.unknownAtRules": "ignore"
+  // デフォルトのフォーマッタを prettier に設定
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // ファイル保存時、prettier による自動フォーマット
+  "editor.formatOnSave": true,
+  // ファイル保存時、ESLint による自動フォーマット
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
 }
