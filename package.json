@@ -8,6 +8,7 @@
   "scripts": {
     "start": "remotion preview",
     "build": "remotion render MyComp out/video.mp4",
+    "build:gif": "remotion render MyComp --codec=gif out/video.gif",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx && tsc"
   },

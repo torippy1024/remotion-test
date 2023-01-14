@@ -1,10 +1,10 @@
 # Remotion video with Tailwind
 
 <p align="center">
-  <a href="https://github.com/remotion-dev/logo">
+  <a href="https://github.com/torippy1024/remotion-test">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.gif">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
+      <source media="(prefers-color-scheme: dark)" srcset="./gif/video.gif">
+      <img alt="Animated Remotion Logo" src="./gif/video.gif">
     </picture>
   </a>
 </p>
